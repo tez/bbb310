@@ -35,3 +35,13 @@ Area.create(
   name: "大工町エリア",
   description: "老舗が多く、料理人の気骨がひしひしと伝わってくる大工町エリア。豪華なバルセットのラインナップは、どの店に入ろうか迷うほど！"
 )
+
+Genre.delete_all
+Genre.create(name: "和食")
+Genre.create(name: "洋食")
+Genre.create(name: "中華")
+Genre.create(name: "韓国")
+Genre.create(name: "食堂")
+Genre.create(name: "居酒屋")
+Genre.create(name: "バー")
+Genre.create(name: "カフェ")

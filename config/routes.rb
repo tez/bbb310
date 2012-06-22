@@ -1,4 +1,6 @@
 Bbb310::Application.routes.draw do
+  resources :genres
+
   resources :areas
 
   # The priority is based upon order of creation:
