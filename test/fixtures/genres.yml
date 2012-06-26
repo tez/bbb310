@@ -1,7 +1,7 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
-one:
-  name: MyString
+japanese_style_foods:
+  name: 和食
 
-two:
-  name: MyString
+chinese_style_foods:
+  name: 中華
