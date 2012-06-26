@@ -18,7 +18,7 @@ class GenresControllerTest < ActionController::TestCase
 
   test "should create genre" do
     assert_difference('Genre.count') do
-      post :create, genre: { name: @genre.name }
+      post :create, genre: { name: "piyo" }
     end
 
     assert_redirected_to genre_path(assigns(:genre))

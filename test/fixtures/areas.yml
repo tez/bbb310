@@ -1,9 +1,9 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
-shimoichi:
+one:
   name: 下市エリア
   description: 第2回目より新たに加わった下市エリア。中心繁華街として栄えた頃からの名残を残す、伝統の味わいをご賞味ください！
 
-ekinan:
+two:
   name: 駅南エリア
   description: アラウンド・ザ・ワールドな駅南エリア。多国籍で多文化な飲食店の数々に驚きの連続間違いなし！みんなでにぎやかに楽しみたいエリアです。

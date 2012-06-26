@@ -11,7 +11,7 @@ class AreaTest < ActiveSupport::TestCase
   end
 
   test "area is not valid without a unique name" do
-    area = Area.new(name: areas(:ekinan).name,
+    area = Area.new(name: areas(:one).name,
                     description: "xxx")
     assert !area.save
     assert_equal "has already been taken", area.errors[:name].join('; ')

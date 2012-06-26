@@ -10,7 +10,7 @@ class GenreTest < ActiveSupport::TestCase
   end
 
   test "area is not valid without a unique name" do
-    genre = Genre.new(name: genres(:japanese_style_foods).name)
+    genre = Genre.new(name: genres(:one).name)
     assert !genre.save
     assert_equal "has already been taken", genre.errors[:name].join('; ')
   end

@@ -1,7 +1,7 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
-japanese_style_foods:
+one:
   name: 和食
 
-chinese_style_foods:
+two:
   name: 中華
