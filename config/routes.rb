@@ -1,4 +1,6 @@
 Bbb310::Application.routes.draw do
+  resources :bars
+
   resources :genres
 
   resources :areas
