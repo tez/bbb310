@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120622120548) do
+ActiveRecord::Schema.define(:version => 20120919135939) do
 
   create_table "areas", :force => true do |t|
     t.string   "name"
@@ -19,6 +19,23 @@ ActiveRecord::Schema.define(:version => 20120622120548) do
     t.datetime "created_at",  :null => false
     t.datetime "updated_at",  :null => false
   end
+
+  create_table "bars", :force => true do |t|
+    t.string   "name"
+    t.text     "description"
+    t.string   "telephone_number"
+    t.string   "address"
+    t.time     "open_time"
+    t.time     "closed_time"
+    t.string   "image_url"
+    t.integer  "area_id"
+    t.integer  "genre_id"
+    t.datetime "created_at",       :null => false
+    t.datetime "updated_at",       :null => false
+  end
+
+  add_index "bars", ["area_id"], :name => "index_bars_on_area_id"
+  add_index "bars", ["genre_id"], :name => "index_bars_on_genre_id"
 
   create_table "genres", :force => true do |t|
     t.string   "name"

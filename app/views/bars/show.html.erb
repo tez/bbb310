@@ -1,0 +1,50 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @bar.name %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @bar.description %>
+</p>
+
+<p>
+  <b>Telephone number:</b>
+  <%= @bar.telephone_number %>
+</p>
+
+<p>
+  <b>Address:</b>
+  <%= @bar.address %>
+</p>
+
+<p>
+  <b>Open time:</b>
+  <%= @bar.open_time %>
+</p>
+
+<p>
+  <b>Closed time:</b>
+  <%= @bar.closed_time %>
+</p>
+
+<p>
+  <b>Image url:</b>
+  <%= @bar.image_url %>
+</p>
+
+<p>
+  <b>Area:</b>
+  <%= @bar.area.name %>
+</p>
+
+<p>
+  <b>Genre:</b>
+  <%= @bar.genre.name %>
+</p>
+
+
+<%= link_to 'Edit', edit_bar_path(@bar) %> |
+<%= link_to 'Back', bars_path %>
