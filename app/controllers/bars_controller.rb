@@ -14,6 +14,7 @@ class BarsController < ApplicationController
   # GET /bars/1.json
   def show
     @bar = Bar.find(params[:id])
+    @json = @bar.to_gmaps4rails
 
     respond_to do |format|
       format.html # show.html.erb

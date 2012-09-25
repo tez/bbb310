@@ -9,8 +9,6 @@
     <th>Open time</th>
     <th>Closed time</th>
     <th>Image url</th>
-    <th>Area</th>
-    <th>Genre</th>
     <th></th>
     <th></th>
     <th></th>
@@ -25,8 +23,6 @@
     <td><%= bar.open_time %></td>
     <td><%= bar.closed_time %></td>
     <td><%= bar.image_url %></td>
-    <td><%= bar.area.name %></td>
-    <td><%= bar.genre.name %></td>
     <td><%= link_to 'Show', bar %></td>
     <td><%= link_to 'Edit', edit_bar_path(bar) %></td>
     <td><%= link_to 'Destroy', bar, method: :delete, data: { confirm: 'Are you sure?' } %></td>
@@ -37,3 +33,5 @@
 <br />
 
 <%= link_to 'New Bar', new_bar_path %>
+
+

@@ -22,6 +22,13 @@ end
 
 gem 'jquery-rails'
 
+gem 'gmaps4rails'
+
+group :development do
+  gem 'annotate', ">=2.5.0"
+end
+
+
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
